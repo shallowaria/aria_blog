@@ -55,7 +55,6 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem 0;
-  color: rgb(var(--black));
   line-height: 1.2;
 }
 h1 {
@@ -77,12 +76,12 @@ strong,
 b {
   font-weight: 700;
 }
-a {
+/* a {
   color: var(--accent);
 }
 a:hover {
   color: var(--accent);
-}
+} */
 p {
   margin-bottom: 1em;
 }
