@@ -1,33 +1,56 @@
 ---
 // import Image from 'astro/components/Image.astro';
-import { Image } from 'astro:assets';
-import AboutHeroImage from '../assets/blog-placeholder-about.jpg';
-import Button from '../components/Button';
-import Layout from '../layouts/BlogPost.astro';
+import { Image } from "astro:assets";
+import AboutHeroImage from "../assets/blog-placeholder-about.jpg";
+import Button from "../components/Button";
+import Layout from "../layouts/BlogPost.astro";
 import "../styles/global.css";
 import { MdArrowOutward } from "react-icons/md";
-import tower from "../assets/tower.png"
+import tower from "../assets/tower.png";
 ---
 
 <Layout
-	title="About Me"
-	description="Somedaylong"
-	pubDate={new Date('August 10 2025')}
+  title="About Me"
+  description="Somedaylong"
+  pubDate={new Date("August 10 2025")}
 >
-	<h4 class="text-zinc-400">你好,这里是Aria</h4>
-	<p >主攻 React 及其相关生态(TailWind、Context API、Redux Toolkit、React Query、Next.js、Astro...)，目前正在正在求职中，项目指路:<a href="/works" class="inline-flex text-blue-500 underline hover:text-blue-700">作品集<MdArrowOutward /></a></p>
-	<ul class="text-[1rem] ml-2">
-		<li>喜欢折腾:装过主机、修过NS手柄漂移、弄过Proxy订阅规则</li>
-		<li>对Ai生图、对话和LLM有足够的了解,折腾过StableDiffusion及SillyTavern</li>
-		<li>学习途中看过
-			<a href="https://git-scm.com/book/zh/v2" class="inline-flex text-blue-500 hover:underline hover:text-blue-700" target="_blank">Git Pro<MdArrowOutward /></a>
-			<a href="https://book.douban.com/subject/6038371/" class="inline-flex text-blue-500 hover:underline hover:text-blue-700" target="_blank">JavaScript DOM编程艺术<MdArrowOutward /></a>
-			<a href="https://book.douban.com/subject/10549733/" class="inline-flex text-blue-500 hover:underline hover:text-blue-700" target="_blank">犀牛书<MdArrowOutward /></a>
-			<a href="https://wangdoc.com/es6/" class="inline-flex text-blue-500 hover:underline hover:text-blue-700" target="_blank">ES6教程<MdArrowOutward /></a>,对基础知识有足够的了解
-			</li>
-		<li>大学时期学过一些C和Python,现在正朝着前端方向努力</li>
-	</ul>
-	<br />
-	<p>Just take one step today!</p>
-		<Image src={tower} alt="Tower" class="fill rounded-full object-fill"/>
+  <h4 class="text-zinc-400">你好,这里是Aria</h4>
+  <p>
+    主攻 React 及其相关生态(TailWind、Context API、Redux Toolkit、React
+    Query、React Router、Next.js、Astro...)，目前正在正在求职中，项目指路:<a
+      href="/works"
+      class="inline-flex text-blue-500 underline hover:text-blue-700"
+      >作品集<MdArrowOutward /></a>
+  </p>
+  <ul class="text-[1rem] ml-2">
+    <li>喜欢折腾:装过主机、修过NS手柄漂移、弄过Proxy订阅规则</li>
+    <li>对Ai生图、对话和LLM有足够的了解,折腾过StableDiffusion及SillyTavern</li>
+    <li>
+      学习途中看过
+      <a
+        href="https://git-scm.com/book/zh/v2"
+        class="inline-flex text-blue-500 hover:underline hover:text-blue-700"
+        target="_blank">Git Pro<MdArrowOutward /></a
+      >
+      <a
+        href="https://book.douban.com/subject/6038371/"
+        class="inline-flex text-blue-500 hover:underline hover:text-blue-700"
+        target="_blank">JavaScript DOM编程艺术<MdArrowOutward /></a
+      >
+      <a
+        href="https://book.douban.com/subject/10549733/"
+        class="inline-flex text-blue-500 hover:underline hover:text-blue-700"
+        target="_blank">犀牛书<MdArrowOutward /></a
+      >
+      <a
+        href="https://wangdoc.com/es6/"
+        class="inline-flex text-blue-500 hover:underline hover:text-blue-700"
+        target="_blank">ES6教程<MdArrowOutward /></a
+      >,对基础知识有足够的了解
+    </li>
+    <li>大学时期学过一些C和Python,现在正朝着前端方向努力</li>
+  </ul>
+  <br />
+  <p>Just take one step today!</p>
+  <Image src={tower} alt="Tower" class="fill rounded-full object-fill" />
 </Layout>
